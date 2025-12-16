@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Saichithra Saravanan | Embedded & Avionics Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#05080c;
+  --panel:rgba(14,20,30,0.85);
+  --accent:#00e5ff;
+  --text:#e8f0f5;
+  --muted:#7a8a9a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background:
+    linear-gradient(rgba(5,8,12,.9),rgba(5,8,12,.9)),
+    radial-gradient(circle at top, #0a1a24, #05080c);
+  color:var(--text);
+}
+
+header{
+  min-height:100vh;
+  padding:60px 8%;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  color:var(--accent);
+  letter-spacing:2px;
+}
+
+nav a{
+  color:var(--text);
+  margin-left:28px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.hero{
+  margin-top:18vh;
+  max-width:900px;
+  background:var(--panel);
+  padding:50px;
+  border:1px solid rgba(0,229,255,.25);
+  backdrop-filter:blur(6px);
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--accent);
+  letter-spacing:1px;
+  font-size:14px;
+}
+
+.buttons{
+  margin-top:30px;
+}
+
+.buttons a{
+  padding:12px 26px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+  margin-right:15px;
+}
+
+.primary{
+  background:var(--accent);
+  color:#000;
+}
+
+section{
+  padding:90px 8%;
+}
+
+h3{
+  font-size:30px;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--panel);
+  padding:30px;
+  border:1px solid rgba(0,229,255,.18);
+}
+
+.card span{
+  color:var(--accent);
+  font-size:13px;
+}
+
+footer{
+  padding:30px;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,.08);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>SS</h1>
+    <div>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h2>Electronics & Embedded Systems Engineer</h2>
+    <p>Embedded Firmware • FPGA • Robotics • System Testing • Avionics</p>
+
+    <div class="buttons">
+      <a href="#projects" class="primary">View Projects</a>
+      <a href="#">Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <h3>Mission-Critical Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Integrated 5-Axis Robotic System</h4>
+      <span>ESP32 • BLE • Embedded C</span>
+      <p>Real-time coordinated control with validated motor response.</p>
+    </div>
+    <div class="card">
+      <h4>FPGA-Controlled Robotic System</h4>
+      <span>Verilog • RTL • FPGA</span>
+      <p>Processing architecture design with end-to-end validation.</p>
+    </div>
+    <div class="card">
+      <h4>Rail Track Crack Detection</h4>
+      <span>Embedded Systems • Sensors</span>
+      <p>Predictive maintenance using magnetic hysteresis sensing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h3>Core Technical Stack</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Embedded & Firmware</h4>
+      <p>C, C++, ESP32, BLE, PWM, Timers</p>
+    </div>
+    <div class="card">
+      <h4>Electronics</h4>
+      <p>Analog & Digital, Sensors, Motor Drivers</p>
+    </div>
+    <div class="card">
+      <h4>FPGA & VLSI</h4>
+      <p>Verilog, Quartus, Cadence Virtuoso</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Let’s Build Reliable Systems</h3>
+  <p>Interested in embedded, robotics, aerospace, and avionics roles.</p>
+</section>
+
+<footer>
+  © 2025 Saichithra Saravanan
+</footer>
+
+</body>
+</html>
