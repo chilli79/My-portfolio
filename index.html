@@ -246,8 +246,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </div>
       <aside class="sheet" aria-label="Quick facts">
         <dl>
-          <div><dt>DISCIPLINE</dt><dd>Electronics &amp; Telecommunication Engineering</dd></div>
-          <div><dt>CURRENT</dt><dd>Agam Robotics, hardware and robotics engineering</dd></div>
+          <div><dt>EDUCATION</dt><dd>B.E. Electronics &amp; Telecommunication Engineering, BMS Institute of Technology &amp; Management, 2022 – 2026</dd></div>
+          <div><dt>CURRENT</dt><dd>Hardware / PCB Engineering Intern, Agam Robotics</dd></div>
           <div><dt>WORKS ON</dt><dd>PCB design, embedded systems, UAV telemetry, robotics hardware</dd></div>
           <div><dt>BASED IN</dt><dd>Bengaluru, India</dd></div>
           <div><dt>OPEN TO</dt><dd>Aerospace, UAV, avionics, embedded hardware and robotics roles</dd></div>
@@ -301,7 +301,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
           <div><h4>MY ROLE</h4><p>Built the system end to end: arm and chassis integration, the electronics and wiring, and the embedded control architecture.</p></div>
           <div><h4>ENGINEERING CHALLENGES</h4><ul><li>Coordinating five arm joints and four independently driven wheels from one embedded controller.</li><li>Mounting a moving arm on a mobile base while keeping the platform stable.</li><li>Routing power and signal wiring cleanly through moving joints.</li></ul></div>
           <div><h4>KEY DESIGN DECISIONS</h4><ul><li>Mecanum wheels for omnidirectional positioning, so the base can line the arm up with a target without turning.</li><li>BLE for control: a low-power, short-range link that pairs directly with a phone or laptop.</li></ul></div>
-          <div><h4>TECHNOLOGIES</h4><div class="chips"><span class="chip">BLE</span><span class="chip">Embedded C/C++</span><span class="chip">Mecanum drive</span><span class="chip">Motor drivers</span><span class="chip">Mechanical integration</span></div></div>
+          <div><h4>TECHNOLOGIES</h4><div class="chips"><span class="chip">ESP32</span><span class="chip">Embedded C++</span><span class="chip">BLE</span><span class="chip">PWM motion control</span><span class="chip">Mecanum drive</span><span class="chip">Mechanical integration</span></div></div>
           <div><h4>OUTCOME</h4><p>An integrated, working mobile manipulator with BLE-based drive and arm control.</p></div>
         </div>
       </div>
@@ -349,7 +349,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
           </ul></div>
           <div><h4>MY ROLE</h4><p>Schematic capture, component selection, PCB layout and connector planning for each board.</p></div>
           <div><h4>ENGINEERING CHALLENGES</h4><ul><li>Fitting components, connectors and mounting holes inside a fixed small outline.</li><li>Working around cutouts and keep-outs set by the mechanical design.</li><li>Switching debug signals cleanly between several targets on the jig.</li></ul></div>
-          <div><h4>TECHNOLOGIES</h4><div class="chips"><span class="chip">Schematic design</span><span class="chip">PCB layout</span><span class="chip">ST-Link</span><span class="chip">J-Link</span><span class="chip">Multiplexing</span><span class="chip">STM32 ecosystem</span></div></div>
+          <div><h4>TECHNOLOGIES</h4><div class="chips"><span class="chip">Schematic design</span><span class="chip">PCB layout</span><span class="chip">ST-Link</span><span class="chip">J-Link</span><span class="chip">Multiplexing</span><span class="chip">KiCad</span><span class="chip">DRC · Gerber · BOM</span></div></div>
         </div>
       </div>
     </article>
@@ -427,24 +427,30 @@ const CONFIG = {
   email: "saichithrasaravanan@gmail.com",
   linkedin: "https://www.linkedin.com/in/saichithra-saravanan/",
   github: "https://github.com/chilli79",
-  resumeUrl: ""                                 // public link to your resume PDF (e.g. Google Drive share link)
+  resumeUrl: "Saichithra_Saravanan_Resume.pdf"
 };
 const EXPERIENCE = [
-  { org: "Agam Robotics", role: "Hardware / Robotics Engineering", dates: "", place: "Bengaluru",
+  { org: "Agam Robotics", role: "Hardware / PCB Engineering Intern", dates: "June 2026 – Present", place: "Bengaluru",
     points: [
-      "Hardware development for robotics and UAV systems, from bench prototypes to integrated assemblies.",
-      "PCB and electronic subsystem work, including compact sensor boards, carrier boards and test fixtures.",
-      "Embedded system integration with ESP32 and STM32-class microcontrollers.",
-      "UAV telemetry and wireless communication: ESP32-based links and flight-controller interfacing.",
-      "Technical documentation and day-to-day collaboration with mechanical and software engineers."
+      "Designed schematics and PCB layouts for embedded subsystems; ran DRC checks and prepared BOMs and manufacturing files.",
+      "Flashed flight-controller firmware with STM32CubeProgrammer, configured PX4 and Betaflight, and supported flight validation.",
+      "Investigated altitude overshoot and unstable flight; worked with the team on firmware updates and QGroundControl parameter tuning.",
+      "Evaluated motor-control and power-interface hardware and identified integration and power-related issues.",
+      "Analysed multi-unit flight tests and documented firmware versions, failures and corrective actions for engineering leadership.",
+      "Worked on UAV telemetry and wireless communication: ESP32-based links and flight-controller interfacing."
+    ]},
+  { org: "Galore Networks Pvt. Ltd.", role: "R&D Intern, 5G Core & RAN", dates: "September 2025 – April 2026", place: "Bengaluru",
+    points: [
+      "Deployed Open5GS on Ubuntu and resolved Linux dependency and environment issues.",
+      "Evaluated srsRAN, GNU Radio SDR flowgraphs and connectivity with commercial user equipment.",
+      "Wrote knowledge-transfer documentation on 4G/5G, GNSS and NavIC architectures."
     ]}
-  // Add earlier roles from your resume here, same shape.
 ];
 const SKILLS = [
-  { t:"HARDWARE", items:["PCB design","Schematic design","Hardware integration","Electronic prototyping"] },
-  { t:"EMBEDDED", items:["ESP32","STM32","Embedded C / C++","Microcontroller interfacing"] },
-  { t:"UAV · ROBOTICS", items:["UAV electronics","Flight controller integration","Telemetry systems","Robotics hardware","Sensor integration"] },
-  { t:"TOOLS", items:[["KiCad","PCB CAD"],["Altium Designer","PCB CAD"],["Git / GitHub","Version control"],["Oscilloscope, multimeter","Bench test"]] }
+  { t:"HARDWARE", items:["PCB design","Schematic design","DRC, Gerber and BOM","Hardware integration","Electronic prototyping"] },
+  { t:"EMBEDDED", items:["ESP32","STM32","Embedded C / C++",["UART · SPI · I²C","Interfaces"],["PWM · ADC","Peripherals"]] },
+  { t:"UAV · ROBOTICS", items:["Flight controller integration",["PX4 · Betaflight","Configuration"],"QGroundControl","Telemetry systems","IMU, ESC and sensor integration"] },
+  { t:"TOOLS", items:[["KiCad","PCB CAD"],["STM32CubeProgrammer","Flashing"],["MATLAB / Simulink","Modelling"],["Git / GitHub","Version control"],["Python · Linux","Scripting"]] }
 ];
 /* ================================== */
 
