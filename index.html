@@ -80,7 +80,8 @@ nav ul a:hover,nav ul a.on{color:var(--green2)}
 .shead{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:36px}
 .shead .mono{color:var(--olive)}
 .two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,56px)}
-.about p{font-size:18px;color:var(--ink2);max-width:36em}
+.about p{font-size:18px;color:var(--ink2);max-width:36em;text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+@media(max-width:600px){.about p{text-align:left;hyphens:manual}}
 .about p:first-child{color:var(--ink);font-size:20px}
 .sheet{border:1px solid var(--line);background:var(--bg2);padding:20px 22px}
 .sheet dl{margin:0;display:grid;gap:14px}
@@ -423,9 +424,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 {
 /* ===== EDIT YOUR DETAILS HERE ===== */
 const CONFIG = {
-  email: "saichithra.email@example.com",       // your real email
-  linkedin: "https://www.linkedin.com/in/your-profile",
-  github: "https://github.com/your-username",
+  email: "saichithrasaravanan@gmail.com",
+  linkedin: "https://www.linkedin.com/in/saichithra-saravanan/",
+  github: "https://github.com/chilli79",
   resumeUrl: ""                                 // public link to your resume PDF (e.g. Google Drive share link)
 };
 const EXPERIENCE = [
